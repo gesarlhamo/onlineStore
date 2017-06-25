@@ -1,0 +1,271 @@
+/*navbar*/
+
+.fiveDollar__container {
+    position: fixed;
+    height: auto;
+    top: 0;
+    background: white;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.27);
+}
+
+.navbar__header ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+@media(min-width: 687px) {
+    .navbar__header ul {
+        flex-direction: row;
+    }
+}
+
+.top-nav-main-link {
+    list-style-type: none;
+    font-family: "ProximaNova-Regular", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-size: 12px;
+    display: block;
+    outline: 0;
+    text-decoration: none;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+@media(min-width: 687px) {
+    .top-nav-main-link {
+        line-height: 60px;
+    }
+}
+
+.fiveDollar__container {
+    display: none;
+}
+@media(min-width: 687px) {
+    .fiveDollar__container {
+        padding-top: 1rem;
+        display: block;
+    }
+}
+
+
+.fiveDollar__logo {
+    transition: all 0.5s ease;
+    padding-right: 2rem;
+}
+
+.fiveDollar__logo a:focus,
+a:hover {
+    color: gray;
+}
+
+.fiveDollar__logo-link {
+    font-size: 25px;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    list-style-type: none;
+    color: #333;
+    font-family: "ProximaNova-Regular", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #333;
+    padding: 0 3em;
+}
+/* end of navbar*/
+
+
+/* carouselExampleControls */
+#carouselExampleControls {
+    display: none;
+}
+@media(min-width: 687px) {
+    #carouselExampleControls {
+        background: #D0B3B8;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        display: block;
+    }
+}
+
+.img-fluid {
+    margin: 0 auto;
+}
+/* end of carouselExampleControls*/
+
+.carousel-inner {
+    max-height: 300px;
+}
+
+.itemsWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 65rem;
+    margin: 0 auto;
+}
+
+.itemContainer {
+    margin-bottom: 0.5rem;
+}
+@media(min-width: 678px) {
+    .itemContainer {
+        margin-bottom: 2rem;
+    }
+}
+
+.itemContainer img {
+    max-width: 150px;
+    width: 100%;
+}
+@media(min-width: 678px) {
+    .itemContainer img {
+        max-width: 240px;
+    }
+}
+
+.item__price {
+    font-family: "ProximaNova-Light", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-size: 11px;
+    letter-spacing: .3;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.item__description {
+    font-family: "ProximaNova-Light", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-size: 11px;
+    letter-spacing: .3;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 20px !important;
+}
+
+
+/* mobile menu */
+.mobile__nav {
+    position: absolute;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #eceeef;
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    z-index: 1000;
+}
+@media(min-width: 687px) {
+    .mobile__nav {
+        display: none;
+    }
+}
+
+.menu__btn {
+    display: inline-block;
+}
+
+.menu__btn img {
+    padding-left: 1rem;
+}
+
+.mobile__logo {
+    display: inline-block;
+    padding-left: 15%;
+    font-size: 15px;
+    font-family: "ProximaNova-Light", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+/* mobile slide out menu*/
+.mobile__navUl {
+    background: #efefef;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    list-style-type: none;
+    color: black;
+    width: 140px;
+    text-align: left;
+    position: fixed;
+}
+@media(min-width: 687px) {
+    .mobile__navUl {
+        display: none;
+    }
+}
+.mobile__navUl li a {
+    color: black !important;
+    font-family: "ProximaNova-Light", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-size: 13px;
+}
+
+
+/*back to top arrow */
+.fiveDollar__backToTopWrapper{
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    position: fixed;
+    text-transform: uppercase;
+    z-index: 2;
+    line-height: 18px;
+}
+.fiveDollar__arrowUp{
+  font-size: 20px;
+  text-align: center;
+  z-index: 2;
+}
+
+.fiveDollar__backToTop {
+  text-align: center;
+  font-size: 10px;
+  font-family: "ProximaNova-Light", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+/* end of back to top arrow*/
+
+footer{
+    background: #efefef;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.fiveDollar__footerLinks{
+    margin-top: 2rem;
+    margin-bottom: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: "ProximaNova-Light", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+    font-size: 12px;
+}
+@media(min-width: 687px){
+    .fiveDollar__footerLinks{
+        flex-direction:row;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-top: 5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
